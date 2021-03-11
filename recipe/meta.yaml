@@ -1,5 +1,5 @@
 {% set name = "PhiK" %}
-{% set version = "0.11.1" %}
+{% set version = "0.11.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/a7/44/13c8ba410f8bf9ba54aa678e18f23f73a270235b6fd74f8be8b7d13e4de8/phik-{{ version }}.tar.gz
-  sha256: 6b836278969aae6dd609f9cb1dcc82fafd519f6f25d1c2147c72645d2ce6f2cf
+  sha256: 3a4486a382b3be4bbf66e51275b21d2f253fd4d82332efb57eda9d674880a602
 
 build:
   number: 0
