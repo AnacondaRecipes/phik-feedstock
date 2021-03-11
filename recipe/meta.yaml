@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/d9/27/d4197ed93c26d9eeedb7c73c0f24462a65c617807c3140e012950c35ccf9/phik-{{ version }}.tar.gz
-  sha256: ed822de3ead1db263f8aea1438ec72c63a3e2ca40cba8f7a0d4342407dcb4e1a
+  url: https://files.pythonhosted.org/packages/a7/44/13c8ba410f8bf9ba54aa678e18f23f73a270235b6fd74f8be8b7d13e4de8/phik-{{ version }}.tar.gz
+  sha256: 6b836278969aae6dd609f9cb1dcc82fafd519f6f25d1c2147c72645d2ce6f2cf
 
 build:
   number: 0
