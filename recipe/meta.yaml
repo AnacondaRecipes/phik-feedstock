@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://files.pythonhosted.org/packages/a7/44/13c8ba410f8bf9ba54aa678e18f23f73a270235b6fd74f8be8b7d13e4de8/phik-{{ version }}.tar.gz
-  sha256: 3a4486a382b3be4bbf66e51275b21d2f253fd4d82332efb57eda9d674880a602
+  url: https://github.com/KaveIO/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: e98e6078b8c81165c6ad565b933883bda8370a375936c478f2d733bcd67863a8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - phik_trial = phik.entry_points:phik_trial  # [win]
@@ -18,13 +18,15 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.5
     - pip
+    - setuptools
+    - wheel
   run:
-    - python
-    - numpy >=1.15.4
-    - scipy >=1.1.0
-    - pandas >=0.23.4
+    - python >=3.5
+    - numpy >=1.18.0
+    - scipy >=1.5.2
+    - pandas >=0.25.1
     - matplotlib-base >=2.2.3
     - numba >=0.38.1
     - joblib >=0.14.1
@@ -32,6 +34,12 @@ requirements:
 test:
   imports:
     - phik
+  requires:
+    - pandas >=0.25.1
+    - phik
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/KaveIO/PhiK
