@@ -14,6 +14,10 @@ build:
   number: 0
 
 requirements:
+  build:
+    - {{ compiler('cxx') }}
+    - cmake >=3.16
+    - ninja-base
   host:
     - python
     - pip
@@ -21,8 +25,6 @@ requirements:
     - wheel
     - pybind11 >=2.8.1
     - scikit-build >=0.13.1
-    - cmake >=3.16
-    - ninja-base
   run:
     - python
     - numpy >=1.18.0
