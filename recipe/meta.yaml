@@ -1,5 +1,5 @@
 {% set name = "phik" %}
-{% set version = "0.12.2" %}
+{% set version = "0.12.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/phik-{{ version }}.tar.gz
-  sha256: b0674eb829d23290433f718d2360122be804b170ccc807ad9d9a8d1c13985533
+  sha256: 29f5eb2e72d064c3215c106559ed40402c5ec0c39391ccd27afa11f88d397407
 
 build:
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv
@@ -25,7 +25,7 @@ requirements:
     - setuptools >=42
     - wheel
     - pybind11 >=2.8.1
-    - scikit-build >=0.13.1
+    - scikit-build >=0.14.1
   run:
     - python
     - numpy >=1.18.0
