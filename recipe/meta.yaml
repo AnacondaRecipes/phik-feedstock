@@ -18,7 +18,7 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - cmake >=3.17
-    #- ninja-base
+    - ninja-base
   host:
     - pip
     - python
