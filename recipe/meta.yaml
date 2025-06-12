@@ -17,6 +17,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - make  # [linux]
     - cmake >=3.17
     - ninja-base
   host:
