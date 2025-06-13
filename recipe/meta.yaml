@@ -53,7 +53,7 @@ test:
     - pytest -v tests
   requires:
     - pip
-    - pytest
+    - pytest >=4.0.2
 
 about:
   home: https://phik.rtfd.io
